@@ -102,11 +102,10 @@ let &t_SR = "\e[4 q"
 
 " moverse en las opciones con tab
 
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " seleccionar opciones con enter
 
-inoremap <silent><expr> <cr>
-			\ complete_info(['selected'])['selected'] != -1 ? "\<c-y>" :
-			\ "\<c-g>u\<cr>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
