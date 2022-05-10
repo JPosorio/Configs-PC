@@ -1,6 +1,4 @@
-DISABLE_AUTO_TITLE="true"
-
-PS1="%d.. "
+PROMPT=" %F{green}%d%f.. "
 
 alias zsh="vim ~/.zshrc"
 alias vi="vim ~/.vimrc"
