@@ -1,5 +1,7 @@
 DISABLE_AUTO_TITLE="true"
 
+PS1="%d.. "
+
 alias zsh="vim ~/.zshrc"
 alias vi="vim ~/.vimrc"
 alias t="touch"
