@@ -1,4 +1,6 @@
-PROMPT=" %F{green}%d%f.. "
+
+PROMPT=" %F{green}%d..%f "
+
 
 alias zsh="vim ~/.zshrc"
 alias vi="vim ~/.vimrc"
