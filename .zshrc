@@ -1,10 +1,13 @@
-export BREW_HOME="/home/linuxbrew/.linuxbrew/bin"
-export PATH="$PATH:$BREW_HOME"
-
 PROMPT=" %F{green}%d..%f "
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+
+autoload -U colors && colors
 
 alias zsh="vim ~/.zshrc"
 alias vi="vim ~/.vimrc"
+alias pn="pnpm"
 alias t="touch"
 alias m="mkdir"
 alias l="ls -a"
@@ -14,6 +17,21 @@ alias v="vim"
 alias .="cd .."
 alias x="vim ."
 alias d="cd"
+alias bu="brew update"
+alias bup="brew upgrade"
+alias bd="brew doctor"
+alias bc="brew cleanup"
+alias ga="git add ."
+alias gs="git status"
+alias gb="git branch"
+alias gba="git branch -a"
+alias gc="git checkout"
+alias gp="git pull"
+alias gpod="git pull origin dev"
+alias gcc="git commit"
+alias gm="git merge"
+
+#enable vi mode in zsh
 
 bindkey -v
 bindkey -M viins ' i' vi-cmd-mode
@@ -54,4 +72,3 @@ zle-line-init() { zle -K vicmd; }
 zle -N zle-line-init
 
 export KEYTIMEOUT=10
- 
