@@ -1,10 +1,13 @@
 syntax on
 set backspace=indent,eol,start
+set path+=**
+set number
 set encoding=UTF-8
 set exrc
 set nocompatible
 set belloff=all
 set relativenumber
+set modifiable
 set updatetime=300
 set shortmess+=c
 set clipboard=unnamed
@@ -21,7 +24,7 @@ set nobackup
 set noswapfile
 set nowritebackup
 set hidden
-set timeoutlen=150
+set timeoutlen=200
 set autoindent
 
 
@@ -32,7 +35,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Yggdroot/indentLine'
 Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
@@ -51,6 +54,10 @@ let g:indentLine_char_list = ['|']
 
 
 nmap <leader>c :NERDTreeFind<ENTER>
+nnoremap <leader>s :vimgrep **/*.
+nnoremap <leader>o :copen<ENTER>
+nnoremap <leader>x :cclose<ENTER>
+nnoremap <leader>r :%s//g
 
 nmap ¡ :tabn <CR>
 nmap ' :tabp <CR>
@@ -82,10 +89,14 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 let &t_SR = "\e[4 q"
 
-" moverse en las opciones con tab
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" seleccionar opciones con enter
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" usar tab y enter para las opciones
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <C-x><C-z> coc#pum#visible() ? coc#pum#stop() : "\<C-x>\<C-z>"
+inoremap <silent><expr> <TAB>
+        \ coc#pum#visible() ? coc#pum#next(1):
+        \ <SID>check_back_space() ? "\<Tab>" :
+        \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+inoremap <silent><expr> <c-space> coc#refresh()
 
