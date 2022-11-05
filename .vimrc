@@ -11,13 +11,10 @@ set modifiable
 set updatetime=300
 set shortmess+=c
 set clipboard=unnamed
-set shiftwidth=1
 set scrolloff=15
 set bg=dark
 set cursorline
 set incsearch
-set breakindent
-set textwidth=90
 set wildmenu
 set wildmode=longest:list,full
 set nobackup
@@ -25,7 +22,7 @@ set noswapfile
 set nowritebackup
 set hidden
 set timeoutlen=200
-set autoindent
+set textwidth=80
 
 
 call plug#begin('~/.vim/plugged')
