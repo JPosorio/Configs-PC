@@ -78,6 +78,9 @@ nmap <leader>k :wincmd k<ENTER>
 nmap <leader>j :wincmd j<ENTER>
 nmap <leader>b <C-v>
 
+" evitar comentario abajo
+au BufEnter * set fo-=c fo-=r fo-=o
+
 " ir donde esta el archivo
 nmap <silent> gd <Plug>(coc-definition)
 
