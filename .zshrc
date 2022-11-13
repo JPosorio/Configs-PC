@@ -7,8 +7,7 @@ autoload -U colors && colors
 source ~/config/prompt/git-prompt.zsh/git-prompt.zsh
 source ~/config/prompt/git-prompt.zsh/examples/compact.zsh
 
-PROMPT=' %F{green}%d..%f $(gitprompt) '
-
+PROMPT='%F{green}%d%f$(gitprompt) '
 
 alias zsh="vim ~/.zshrc"
 alias vi="vim ~/.vimrc"
