@@ -1,9 +1,14 @@
-PROMPT=" %F{green}%d..%f "
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
 autoload -U colors && colors
+
+source ~/config/prompt/git-prompt.zsh/git-prompt.zsh
+source ~/config/prompt/git-prompt.zsh/examples/compact.zsh
+
+PROMPT=' %F{green}%d..%f $(gitprompt) '
+
 
 alias zsh="vim ~/.zshrc"
 alias vi="vim ~/.vimrc"
