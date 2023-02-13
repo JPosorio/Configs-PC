@@ -1,0 +1,4 @@
+berkeley-db    brotli           curl   gettext  gmp    krb5     libmpc      libtirpc      libxml2            lua        mpfr     openldap     pnpm         readline  tldr        xz
+berkeley-db@5  bzip2            expat  gh       gperf  libedit  libnghttp2  libunistring  libyaml            lz4        ncurses  openssl@1.1  python@3.10  rtmpdump  unzip       yarn
+binutils       c-ares           gcc    git      icu4c  libffi   libnsl      libuv         libzip             m4         node     pcre2        python@3.11  ruby      util-linux  zlib
+bison          ca-certificates  gdbm   glab     isl    libidn2  libssh2     libxcrypt     linux-headers@4.4  mpdecimal  nvm      perl         python@3.9   sqlite    vim         zstd
