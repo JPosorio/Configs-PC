@@ -11,19 +11,20 @@ set modifiable
 set updatetime=300
 set shortmess+=c
 set clipboard=unnamed
-set scrolloff=15
+set scrolloff=10
 set bg=dark
 set cursorline
+set linebreak
 set incsearch
+set wildignore+=*/node_modules
 set wildmenu
 set wildmode=longest:list,full
 set nobackup
 set noswapfile
 set nowritebackup
-set hidden
 set timeoutlen=200
-set textwidth=80
-
+set textwidth=100
+set wildignore+=node_modules/**,.git/**,.github/**
 
 call plug#begin('~/.vim/plugged')
 
@@ -48,7 +49,6 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='<tab>'
 let NERDTreeShowHidden=1
 let g:indentLine_char_list = ['|']
-
 
 nmap <leader>c :NERDTreeFind<ENTER>
 nnoremap <leader>s :vimgrep **/*.
@@ -84,6 +84,9 @@ nmap <silent> gd <Plug>(coc-definition)
 " volver donde se usa el archivo
 nmap gb <C-o>
 
+" ir donde se implementa 
+nmap <silent> gi <Plug>
+
 " cambiar el modo del puntero segun el modo
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
@@ -100,3 +103,15 @@ inoremap <silent><expr> <TAB>
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 inoremap <silent><expr> <c-space> coc#refresh()
 
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction

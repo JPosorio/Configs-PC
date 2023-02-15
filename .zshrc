@@ -4,8 +4,8 @@ export NVM_DIR="$HOME/.nvm"
 
 autoload -U colors && colors
 
-source ~/config/prompt/git-prompt.zsh/git-prompt.zsh
-source ~/config/prompt/git-prompt.zsh/examples/compact.zsh
+source $HOME/Configs-PC/config/prompt/git-prompt.zsh/git-prompt.zsh
+source $HOME/Configs-PC/config/prompt/git-prompt.zsh/examples/compact.zsh
 
 PROMPT='%F{green}%d%f$(gitprompt) '
 
@@ -14,7 +14,7 @@ alias vi="vim ~/.vimrc"
 alias pn="pnpm"
 alias t="touch"
 alias m="mkdir"
-alias l="ls -a"
+alias l="ls -lha"
 alias c="clear"
 alias r="rm -rf"
 alias v="vim"
@@ -26,14 +26,20 @@ alias bup="brew upgrade"
 alias bd="brew doctor"
 alias bc="brew cleanup"
 alias ga="git add ."
-alias gs="git status"
 alias gb="git branch"
+alias gs="git status"
+alias gcc="git commit"
 alias gba="git branch -a"
 alias gc="git checkout"
-alias gp="git pull"
 alias gpod="git pull origin dev"
-alias gcc="git commit"
+alias gpo="git pull origin"
+alias gppo="git push origin"
+alias gl="git log"
+alias arbol="git log --oneline --graph --color --all --decorate"
+alias gr="git restore ."
+alias grs="git restore --staged ."
 alias gm="git merge"
+alias sz="source $HOME/.zshrc"
 
 #enable vi mode in zsh
 
@@ -74,5 +80,8 @@ preexec() { echo -ne '\e[2 q' }
 # Start in block mode
 zle-line-init() { zle -K vicmd; }
 zle -N zle-line-init
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 export KEYTIMEOUT=10

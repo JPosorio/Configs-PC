@@ -8,6 +8,7 @@
     "javascript",
     "javascriptreact"
   ],
+  "tailwindCSS.headwind.runOnSave": true,
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextCurrentLineOnly": false,
   "diagnostic.virtualTextAlign": "below"

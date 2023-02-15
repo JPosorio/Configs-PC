@@ -40,7 +40,7 @@ alias bu="brew update"
 alias su="sudo apt update"
 alias sup="sudo apt upgrade"
 alias sc="sudo apt autoremove"
-alias s="source"
+alias sz="source $HOME/.zshrc"
 
 bindkey -v
 bindkey -M viins ' i' vi-cmd-mode
