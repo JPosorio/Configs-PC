@@ -13,6 +13,3 @@
   "diagnostic.virtualTextCurrentLineOnly": false,
   "diagnostic.virtualTextAlign": "below"
 }
-
-coc-css coc-htmlhint coc-json coc-rome coc-tsserver coc-cssmodules coc-diagnostic coc-emmet coc-git coc-highlight coc-html
-coc-lightbulb coc-pairs coc-prettier coc-snippets coc-tailwindcss

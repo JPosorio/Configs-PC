@@ -1,0 +1,20 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "html.filetypes": [
+    "html",
+    "handlebars",
+    "htmldjango",
+    "blade",
+    "javascript",
+    "javascriptreact"
+  ],
+  "tailwindCSS.headwind.runOnSave": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualTextAlign": "below"
+}
+
+/* coc-css coc-htmlhint coc-json coc-rome coc-tsserver coc-cssmodules coc-diagnostic coc-emmet coc-git coc-highlight coc-html */
+/* coc-lightbulb coc-pairs coc-prettier coc-snippets coc-tailwindcss */
+/* coc-tsserver coc-snippets coc-prettier coc-pairscoc-json coc-highlight coc-git coc-diagnostic coc-cssmodules coc-yaml coc-tailwind-intellisense */
+// coc-rome coc-htmlhint coc-css @yaegassy/coc-tailwindcss3
