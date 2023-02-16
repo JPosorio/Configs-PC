@@ -3,8 +3,8 @@ export NVM_DIR="$HOME/.nvm"
  [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
  [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
-source ~/config/prompt/git-prompt.zsh/git-prompt.zsh
-source ~/config/prompt/git-prompt.zsh/examples/compact.zsh
+source ~/Configs-PC/config/prompt/git-prompt.zsh/git-prompt.zsh
+source ~/Configs-PC/config/prompt/git-prompt.zsh/examples/compact.zsh
 
 PROMPT='%F{green}%d%f$(gitprompt) '
 
