@@ -25,6 +25,7 @@ set nowritebackup
 set timeoutlen=200
 set textwidth=100
 set wildignore+=node_modules/**,.git/**,.github/**
+set lazyredraw
 
 call plug#begin('~/.vim/plugged')
 
