@@ -26,6 +26,8 @@ set timeoutlen=200
 set textwidth=100
 set wildignore+=node_modules/**,.git/**,.github/**
 set lazyredraw
+set foldmethod=indent
+set nofoldenable
 
 call plug#begin('~/.vim/plugged')
 
