@@ -28,6 +28,7 @@ set wildignore+=node_modules/**,.git/**,.github/**
 set lazyredraw
 set foldmethod=indent
 set nofoldenable
+set hlsearch
 
 call plug#begin('~/.vim/plugged')
 
@@ -53,7 +54,7 @@ let NERDTreeMapOpenInTab='<tab>'
 let NERDTreeShowHidden=1
 let g:indentLine_char_list = ['|']
 
-nmap <leader>c :NERDTreeFind<ENTER>
+nnoremap <leader>c :nohls<cr><C-L>
 nnoremap <leader>s :vimgrep **/*.
 nnoremap <leader>o :copen<ENTER>
 nnoremap <leader>x :cclose<ENTER>
