@@ -28,6 +28,7 @@ set wildignore+=node_modules/**,.git/**,.github/**
 set lazyredraw
 set foldmethod=indent
 set nofoldenable
+set hlsearch
 
 call plug#begin('~/.vim/plugged')
 
