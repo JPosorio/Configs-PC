@@ -5,6 +5,7 @@ function web_search() {
     $ZSH_WEB_SEARCH_ENGINES
     github      "https://github.com/search?q="
     brave       "https://search.brave.com/search?q="
+    youtube       "https://www.youtube.com/results?search_query="
   )
   if [[ -z "$urls[$1]" ]]; then
     echo "Search engine '$1' not supported."
@@ -19,6 +20,7 @@ function web_search() {
 }
 alias br='web_search brave'
 alias gt='web_search github'
+alias yt='web_search youtube'
 if [[ ${#ZSH_WEB_SEARCH_ENGINES} -gt 0 ]]; then
   typeset -A engines
   engines=($ZSH_WEB_SEARCH_ENGINES)
