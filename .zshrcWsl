@@ -33,6 +33,7 @@ alias gp="git pull"
 alias gpp="git push"
 alias gcf="git clean -f"
 alias gf="git fetch --all"
+alias gbb="git branch -vv"
 alias gps="git push --set-upstream"
 alias gr='git restore .'
 alias grs='git restore --staged .'
