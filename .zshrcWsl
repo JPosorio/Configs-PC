@@ -45,6 +45,7 @@ alias su="sudo apt update"
 alias sup="sudo apt upgrade"
 alias sc="sudo apt autoremove"
 alias sz="source $HOME/.zshrc"
+alias rd="cd $HOME/windows/Documents/abidrupal9/docroot/themes/custom"
 
 bindkey -v
 bindkey -M viins ' i' vi-cmd-mode

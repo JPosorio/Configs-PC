@@ -73,6 +73,7 @@ xnoremap <Space>i <Esc>
 nmap <leader>a gg=G
 nmap <leader>q :q<ENTER>
 nmap <leader>f /
+nmap <leader>p :tabe <bar> find
 nmap <leader>l :wincmd l<ENTER>
 nmap <leader>h :wincmd h<ENTER>
 nmap <leader>k :wincmd k<ENTER>
