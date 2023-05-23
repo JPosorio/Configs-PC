@@ -6,8 +6,6 @@ autoload -U colors && colors
 
 source $HOME/Configs-PC/config/prompt/git-prompt.zsh/git-prompt.zsh
 source $HOME/Configs-PC/config/prompt/git-prompt.zsh/examples/compact.zsh
-source $HOME/Configs-PC/PluginsZsh/web-search.plugin.zsh
-source $HOME/Configs-PC/PluginsZsh/jsontools.plugin.zsh
 
 PROMPT='%F{green}%d%f$(gitprompt) '
 
