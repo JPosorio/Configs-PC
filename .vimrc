@@ -15,6 +15,7 @@ set scrolloff=15
 set bg=dark
 set cursorline
 set linebreak
+set breakindent
 set incsearch
 set wildmenu
 set wildmode=longest:list,full
