@@ -11,12 +11,11 @@ set modifiable
 set updatetime=300
 set shortmess+=c
 set clipboard=unnamed
-set scrolloff=10
+set scrolloff=15
 set bg=dark
 set cursorline
 set linebreak
 set incsearch
-set wildignore+=*/node_modules
 set wildmenu
 set wildmode=longest:list,full
 set nobackup
@@ -29,6 +28,7 @@ set lazyredraw
 set foldmethod=indent
 set nofoldenable
 set hlsearch
+
 
 call plug#begin('~/.vim/plugged')
 
@@ -53,6 +53,8 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='<tab>'
 let NERDTreeShowHidden=1
 let g:indentLine_char_list = ['|']
+let g:coc_disable_startup_warning = 1
+
 
 nnoremap <leader>c :nohls<cr><C-L>
 nnoremap <leader>s :vimgrep **/*.
@@ -66,6 +68,7 @@ nmap - :tabm + <CR>
 nmap , :tabm - <CR>
 
 nmap <leader>w :w<ENTER>
+nmap <leader>t :NERDTree<ENTER>
 imap <Space>i <Esc>
 cnoremap <Space>i <Esc>
 onoremap <Space>i <Esc>
@@ -97,8 +100,7 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 let &t_SR = "\e[4 q"
 
-
-" usar tab y enter para las opciones
+"usar tab y enter para seleccionar
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 inoremap <silent><expr> <C-x><C-z> coc#pum#visible() ? coc#pum#stop() : "\<C-x>\<C-z>"
 inoremap <silent><expr> <TAB>

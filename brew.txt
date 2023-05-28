@@ -1,0 +1,7 @@
+gh
+glab
+git
+node
+nvm
+pnpm
+vim

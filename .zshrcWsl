@@ -3,8 +3,8 @@ export NVM_DIR="$HOME/.nvm"
  [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
  [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
-source ~/Configs-PC/config/prompt/git-prompt.zsh/git-prompt.zsh
-source ~/Configs-PC/config/prompt/git-prompt.zsh/examples/compact.zsh
+source $HOME/Configs-PC/config/prompt/git-prompt.zsh/git-prompt.zsh
+source $HOME/Configs-PC/config/prompt/git-prompt.zsh/examples/compact.zsh
 
 PROMPT='%F{green}%d%f$(gitprompt) '
 
@@ -44,6 +44,8 @@ alias sup="sudo apt upgrade"
 alias sc="sudo apt autoremove"
 alias sz="source $HOME/.zshrc"
 alias rd="cd $HOME/windows/Documents/abidrupal9/docroot/themes/custom"
+
+#enable vi mode in zsh
 
 bindkey -v
 bindkey -M viins ' i' vi-cmd-mode

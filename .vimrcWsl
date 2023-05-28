@@ -21,7 +21,6 @@ set wildmode=longest:list,full
 set nobackup
 set noswapfile
 set nowritebackup
-set hidden
 set timeoutlen=200
 set textwidth=100
 set wildignore+=node_modules/**,.git/**,.github/**
