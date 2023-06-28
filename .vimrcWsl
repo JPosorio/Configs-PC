@@ -39,6 +39,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Yggdroot/indentLine'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -77,12 +79,14 @@ xnoremap <Space>i <Esc>
 nmap <leader>a gg=G
 nmap <leader>q :q<ENTER>
 nmap <leader>f /
-nmap <leader>p :tabe <bar> find
+nmap <leader>p :Files <CR>
 nmap <leader>l :wincmd l<ENTER>
 nmap <leader>h :wincmd h<ENTER>
 nmap <leader>k :wincmd k<ENTER>
 nmap <leader>j :wincmd j<ENTER>
 nmap <leader>b <C-v>
+
+let g:fzf_action = { 'enter': 'tab split' }
 
 " evitar comentario abajo
 au BufEnter * set fo-=c fo-=r fo-=o
