@@ -14,6 +14,7 @@ set clipboard=unnamed
 set scrolloff=15
 set bg=dark
 set cursorline
+set laststatus=2
 set linebreak
 set breakindent
 set incsearch
