@@ -4,6 +4,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="/usr/local/opt/php@8.1/bin:$PATH"
 export PATH="/usr/local/opt/php@8.1/sbin:$PATH"
+export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
 
 autoload -U colors && colors
 
@@ -44,6 +45,7 @@ alias grr="git reflog"
 alias arbol="git log --oneline --graph --color --all --decorate"
 alias bu="brew update && brew upgrade && brew cleanup && brew autoremove --dry-run && brew autoremove && brew doctor"
 alias sz="source $HOME/.zshrc"
+alias ds="docker stop $(docker ps -a -q)"
 
 #enable vi mode in zsh
 
