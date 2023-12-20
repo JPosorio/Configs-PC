@@ -47,6 +47,7 @@ alias arbol="git log --oneline --graph --color --all --decorate"
 alias bu="brew update && brew upgrade && brew cleanup && brew autoremove --dry-run && brew autoremove && brew doctor"
 alias sz="source $HOME/.zshrc"
 alias ds="docker stop $(docker ps -a -q)"
+alias bc="magick mogrify -format webp *.png"
 
 #enable vi mode in zsh
 

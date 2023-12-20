@@ -48,6 +48,8 @@ alias sup="sudo apt upgrade"
 alias sc="sudo apt autoremove"
 alias sz="source $HOME/.zshrc"
 alias rd="cd $HOME/windows/Documents/abidrupal9/docroot/themes/custom"
+alias ds="docker stop $(docker ps -a -q)"
+alias bc="magick mogrify -format webp *.png"
 
 #enable vi mode in zsh
 
