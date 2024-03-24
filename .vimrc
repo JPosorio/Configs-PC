@@ -45,6 +45,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'nelsyeung/twig.vim'
+Plug 'cakebaker/scss-syntax.vim'
 
 call plug#end()
 
