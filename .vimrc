@@ -44,8 +44,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
-Plug 'nelsyeung/twig.vim'
-Plug 'cakebaker/scss-syntax.vim'
+Plug 'styled-components/vim-styled-components'
 
 call plug#end()
 
