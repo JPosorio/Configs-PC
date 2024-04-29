@@ -1,7 +1,5 @@
 export PATH="/usr/local/sbin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/bin:$PATH"
-export NVM_DIR="$HOME/.nvm"
- [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
- [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+eval "$(fnm env --use-on-cd)"
 
 export LANDO_HOST_NAME_DEV=host.wsl.internal
 export LANDO_HOST_GATEWAY_DEV=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}')
@@ -15,7 +13,6 @@ alias zsh="vim ~/.zshrc"
 alias vi="vim ~/.vimrc"
 alias pn="pnpm"
 alias t="touch"
-alias tl="tldr"
 alias m="mkdir"
 alias l="ls -a --color=auto"
 alias c="clear"

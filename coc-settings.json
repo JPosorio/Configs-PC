@@ -8,8 +8,8 @@
     "javascript",
     "javascriptreact"
   ],
-  "tailwindCSS.headwind.runOnSave": true,
-  "eslint.run": "onSave",
-  "eslint.format.enable": true,
-  "eslint.autoFixOnSave": true
+  "tailwindCSS.headwind.runOnSave": true
+  // "eslint.run": "onSave",
+  // "eslint.format.enable": true,
+  // "eslint.autoFixOnSave": true
 }
