@@ -1,7 +1,9 @@
 gh
-glab
 git
+glab
+imagemagick
 node
-nvm
+php@8.1
 pnpm
+python@3.11
 vim
