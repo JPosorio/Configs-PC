@@ -69,7 +69,7 @@ nnoremap <leader>c :nohls<cr><C-L>
 nnoremap <leader>s :vimgrep **/*.
 nnoremap <leader>o :copen<ENTER>
 nnoremap <leader>x :cclose<ENTER>
-nnoremap <leader>r :%s//g
+nnoremap <leader>r :%s//gc
 
 nmap ¡ :tabn <CR>
 nmap ' :tabp <CR>
