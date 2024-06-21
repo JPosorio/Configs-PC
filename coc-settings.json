@@ -8,8 +8,14 @@
     "javascript",
     "javascriptreact"
   ],
-  "tsserver.locale": "es"
-  // "eslint.run": "onSave",
-  // "eslint.format.enable": true,
-  // "eslint.autoFixOnSave": true
+  "tsserver.locale": "es",
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.probe": [
+    "typescriptreact",
+    "javascriptreact",
+    "typescript",
+    "javascript",
+    "html"
+  ]
 }
