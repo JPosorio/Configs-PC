@@ -46,7 +46,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'styled-components/vim-styled-components'
 Plug 'nelsyeung/twig.vim'
-Plug 'github/copilot.vim'
 
 call plug#end()
 
