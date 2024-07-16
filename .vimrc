@@ -98,17 +98,21 @@ let g:import_cost_refresh_interval = 3000  " Establece el intervalo de actualiza
 let g:fzf_action = { 'enter': 'tab split' }
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
-" evitar comentario abajo
+" Evitar comentario abajo
 au BufEnter * set fo-=c fo-=r fo-=o
 
-" ir donde esta el archivo
-nmap <silent> gd <Plug>(coc-definition)
+" Ir donde se implementa
+nmap <silent> gd <Plug>(coc-implementation)
 
-" volver donde se usa el archivo
+" volver donde se ejecuto el comando de go implementation
 nmap gb <C-o>
 
-" ir donde se implementa 
-nmap <silent> gi <Plug>
+" Ver en que archivos se usa
+nmap <silent> gr <Plug>(coc-references)
+
+" Ver el tipado
+nmap <silent> gt <Plug>(coc-type-definition)
+
 
 " cambiar el modo del puntero segun el modo
 let &t_SI = "\e[6 q"
