@@ -102,7 +102,10 @@ let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -
 au BufEnter * set fo-=c fo-=r fo-=o
 
 " Ir donde se implementa
-nmap gd <Plug>(coc-implementation)
+nmap gd <Plug>(coc-definition)
+
+" Ir donde se implementa
+nmap gi <Plug>(coc-implementation)
 
 " volver donde se ejecuto el comando de go implementation
 nmap gb <C-o>
