@@ -98,16 +98,16 @@ let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -
 au BufEnter * set fo-=c fo-=r fo-=o
 
 " ir donde se implementa 
-nmap <silent> gd <Plug>(coc-implementation)
+nmap gd <Plug>(coc-implementation)
 
 " volver donde se ejecuto el comando de go implementation
 nmap gb <C-o>
 
 " Ver en que archivos se usa
-nmap <silent> gr <Plug>(coc-references)
+nmap gr <Plug>(coc-references)
 
 " Ver el tipado
-nmap <silent> gt <Plug>(coc-type-definition)
+nmap gt <Plug>(coc-type-definition)
 
 " Dialogo con ayuda a solucion
 nmap ch <Plug>(coc-codeaction)
