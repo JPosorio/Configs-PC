@@ -109,6 +109,15 @@ nmap <silent> gr <Plug>(coc-references)
 " Ver el tipado
 nmap <silent> gt <Plug>(coc-type-definition)
 
+" Dialogo con ayuda a solucion
+nmap ch <Plug>(coc-codeaction)
+
+" Arregla lo que esta debajo del cursor
+nmap cf <Plug>(coc-fix-current)
+
+" Renombra en todos los archivos que se usa
+nmap cr <Plug>(coc-rename)
+
 " cambiar el modo del puntero segun el modo
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
