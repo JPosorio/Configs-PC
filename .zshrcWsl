@@ -45,6 +45,8 @@ alias sup="sudo apt upgrade"
 alias sc="sudo apt autoremove"
 alias sz="source $HOME/.zshrc"
 alias bc="magick mogrify -format webp *.png"
+alias dc="docker compose"
+alias dd="docker"
 
 #enable vi mode in zsh
 
