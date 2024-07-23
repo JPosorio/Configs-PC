@@ -46,6 +46,8 @@ alias sz="source $HOME/.zshrc"
 alias bc="magick mogrify -format webp *.png"
 alias dc="docker compose"
 alias dd="docker"
+alias drc="docker rm -vf $(docker ps -aq)"
+alias dri="docker rmi -f $(docker images -aq)"
 
 #enable vi mode in zsh
 
