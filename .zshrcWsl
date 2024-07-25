@@ -1,5 +1,4 @@
 export PATH="/usr/local/sbin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/bin:$PATH"
-eval "$(fnm env --use-on-cd)"
 
 export LANDO_HOST_NAME_DEV=host.wsl.internal
 export LANDO_HOST_GATEWAY_DEV=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}')
@@ -49,6 +48,9 @@ alias dc="docker compose"
 alias dd="docker"
 alias drc="docker rm -vf $(docker ps -aq)"
 alias dri="docker rmi -f $(docker images -aq)"
+alias std="sudo systemctl start docker"
+alias ssd="sudo systemctl status docker"
+alias sd="sudo systemctl stop docker.socket"
 
 #enable vi mode in zsh
 
