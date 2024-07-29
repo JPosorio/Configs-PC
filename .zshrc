@@ -1,6 +1,5 @@
 export PATH="/usr/local/opt/php@8.1/bin:$PATH"
 export PATH="/usr/local/opt/php@8.1/sbin:$PATH"
-export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
 
 autoload -U colors && colors
 

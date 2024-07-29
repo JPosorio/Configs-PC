@@ -6,7 +6,8 @@ coc-yaml
 coc-diagnostic
 coc-eslint
 coc-git
-coc-html
+coc-htmlhint
 coc-pairs
 coc-prettier
+coc-stylelint
 coc-snippets

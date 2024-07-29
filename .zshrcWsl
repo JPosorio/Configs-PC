@@ -1,7 +1,6 @@
 export PATH="/usr/local/sbin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/bin:$PATH"
 
-export LANDO_HOST_NAME_DEV=host.wsl.internal
-export LANDO_HOST_GATEWAY_DEV=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}')
+autoload -U colors && colors
 
 source $HOME/Configs-PC/config/prompt/git-prompt.zsh/git-prompt.zsh
 source $HOME/Configs-PC/config/prompt/git-prompt.zsh/examples/compact.zsh

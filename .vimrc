@@ -90,10 +90,6 @@ nmap <leader>k :wincmd k<ENTER>
 nmap <leader>j :wincmd j<ENTER>
 nmap <leader>b <C-v>
 
-" Configuración de Import Cost
-let g:import_cost_verbose = 1  " Muestra mensajes verbosos para depuración
-let g:import_cost_refresh_interval = 3000  " Establece el intervalo de actualización en milisegundos (en este caso, 3000ms)
-
 let g:fzf_action = { 'enter': 'tab split' }
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
