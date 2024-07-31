@@ -1,4 +1,4 @@
-@yaegassy/coc-tailwindcss3
+coc-tailwindcss
 coc-css
 coc-json
 coc-tsserver

@@ -1,5 +1,4 @@
-export PATH="/usr/local/opt/php@8.1/bin:$PATH"
-export PATH="/usr/local/opt/php@8.1/sbin:$PATH"
+export PATH=/opt/homebrew/bin:$PATH
 
 autoload -U colors && colors
 
@@ -41,7 +40,7 @@ alias arbol="git log --oneline --graph --color --all --decorate"
 alias bu="brew update && brew upgrade && brew cleanup && brew autoremove --dry-run && brew autoremove && brew doctor"
 alias sz="source $HOME/.zshrc"
 alias bc="magick mogrify -format webp *.png"
-alias dc="docker compose"
+alias dc="docker-compose"
 alias dd="docker"
 alias drc="docker rm -vf $(docker ps -aq)"
 alias dri="docker rmi -f $(docker images -aq)"

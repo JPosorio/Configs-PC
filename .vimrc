@@ -1,4 +1,5 @@
 syntax on
+set re=0
 set backspace=indent,eol,start
 set path+=**
 set number
