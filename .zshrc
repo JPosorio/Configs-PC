@@ -1,4 +1,5 @@
 export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/sbin:$PATH
 
 autoload -U colors && colors
 
@@ -42,6 +43,8 @@ alias sz="source $HOME/.zshrc"
 alias bc="magick mogrify -format webp *.png"
 alias dc="docker-compose"
 alias dd="docker"
+alias sd="colima start"
+alias std="colima stop"
 alias drc="docker rm -vf $(docker ps -aq)"
 alias dri="docker rmi -f $(docker images -aq)"
 
@@ -85,7 +88,9 @@ preexec() { echo -ne '\e[2 q' }
 zle-line-init() { zle -K vicmd; }
 zle -N zle-line-init
 
+cd ~/bavaria/people
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
 export KEYTIMEOUT=10
+export PATH="/opt/homebrew/sbin:$PATH"
